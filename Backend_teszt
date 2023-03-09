@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "981ab1c7-144c-4d38-9c0d-b8a0c6da95ac",
+		"name": "Backend teszt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9000/api/ingatlan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/api/ingatlan"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/api/ingatlan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"leiras\": \"Szép lakás\",\r\n   \"hirdetesDatuma\": \"2022-03-09\",\r\n    \"tehermentes\": true,\r\n    \"ar\": 22220000\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/api/ingatlan"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/api/ingatlan/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/api/ingatlan/4"
+			},
+			"response": []
+		}
+	]
+}
